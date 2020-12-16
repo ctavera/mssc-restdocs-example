@@ -1,0 +1,11 @@
+C:\Developer\Workspaces\mssc-restdocs-example\src\main\java\da\springframework\msscrestdocsexample\web\model\BeerDto.java
+C:\Developer\Workspaces\mssc-restdocs-example\src\main\java\da\springframework\msscrestdocsexample\repositories\BeerRepository.java
+C:\Developer\Workspaces\mssc-restdocs-example\src\main\java\da\springframework\msscrestdocsexample\MsscRestdocsExampleApplication.java
+C:\Developer\Workspaces\mssc-restdocs-example\src\main\java\da\springframework\msscrestdocsexample\bootstrap\BeerLoader.java
+C:\Developer\Workspaces\mssc-restdocs-example\src\main\java\da\springframework\msscrestdocsexample\web\controller\MvcExceptionHandler.java
+C:\Developer\Workspaces\mssc-restdocs-example\src\main\java\da\springframework\msscrestdocsexample\web\model\BeerStyleEnum.java
+C:\Developer\Workspaces\mssc-restdocs-example\src\main\java\da\springframework\msscrestdocsexample\web\controller\BeerController.java
+C:\Developer\Workspaces\mssc-restdocs-example\src\main\java\da\springframework\msscrestdocsexample\web\mappers\BeerMapper.java
+C:\Developer\Workspaces\mssc-restdocs-example\src\main\java\da\springframework\msscrestdocsexample\web\mappers\DateMapper.java
+C:\Developer\Workspaces\mssc-restdocs-example\src\main\java\da\springframework\msscrestdocsexample\domain\Beer.java
+C:\Developer\Workspaces\mssc-restdocs-example\src\main\java\da\springframework\msscrestdocsexample\web\model\BeerPagedList.java
