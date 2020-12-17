@@ -1,0 +1,5 @@
+[source,bash]
+----
+$ curl 'https://da.springframework.restdocstest:80/api/v1/beer/aaf6ce4b-16d9-46ba-bc2f-be1e2f5f252a?iscold=yes' -i -X GET \
+    -H 'Accept: application/json'
+----

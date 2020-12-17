@@ -2,39 +2,39 @@
 |Path|Type|Description
 
 |`+id+`
-|`+Null+`
+|`+class java.util.UUID+`
 |Id of Beer
 
 |`+version+`
-|`+Null+`
+|`+class java.lang.Long+`
 |Version number
 
 |`+createdDate+`
-|`+Null+`
+|`+class java.sql.Timestamp+`
 |Date Created
 
 |`+lastModifiedDate+`
-|`+Null+`
+|`+class java.sql.Timestamp+`
 |Date Updated
 
 |`+beerName+`
-|`+Null+`
+|`+class java.lang.String+`
 |Beer Name
 
 |`+beerStyle+`
-|`+Null+`
+|`+class java.lang.String+`
 |Beer Style
 
 |`+upc+`
-|`+Null+`
+|`+class java.lang.Long+`
 |UPC of Beer
 
 |`+price+`
-|`+Null+`
+|`+class java.math.BigDecimal+`
 |Price
 
 |`+quantityOnHand+`
-|`+Null+`
+|`+class java.lang.Integer+`
 |Quantity On Hand
 
 |===

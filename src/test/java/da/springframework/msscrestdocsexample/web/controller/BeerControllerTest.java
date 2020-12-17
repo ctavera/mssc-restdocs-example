@@ -20,6 +20,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.util.StringUtils;
 
 import java.math.BigDecimal;
+import java.sql.Timestamp;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -57,7 +58,7 @@ class BeerControllerTest {
                 .param("iscold", "yes")
                 .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andDo(document("v1/beer",
+                .andDo(document("v1/beer-get",
                         pathParameters(
                                 parameterWithName("beerId").description("UUID of desired beer to get.")
                         ),
@@ -65,15 +66,15 @@ class BeerControllerTest {
                                 parameterWithName("iscold").description("Is Beer Cold Query param")
                         ),
                         responseFields(
-                                fieldWithPath("id").description("Id of Beer"),
-                                fieldWithPath("version").description("Version number"),
-                                fieldWithPath("createdDate").description("Date Created"),
-                                fieldWithPath("lastModifiedDate").description("Date Updated"),
-                                fieldWithPath("beerName").description("Beer Name"),
-                                fieldWithPath("beerStyle").description("Beer Style"),
-                                fieldWithPath("upc").description("UPC of Beer"),
-                                fieldWithPath("price").description("Price"),
-                                fieldWithPath("quantityOnHand").description("Quantity On Hand")
+                                fieldWithPath("id").type(UUID.class).description("Id of Beer"),
+                                fieldWithPath("version").type(Long.class).description("Version number"),
+                                fieldWithPath("createdDate").type(Timestamp.class).description("Date Created"),
+                                fieldWithPath("lastModifiedDate").type(Timestamp.class).description("Date Updated"),
+                                fieldWithPath("beerName").type(String.class).description("Beer Name"),
+                                fieldWithPath("beerStyle").type(String.class).description("Beer Style"),
+                                fieldWithPath("upc").type(Long.class).description("UPC of Beer"),
+                                fieldWithPath("price").type(BigDecimal.class).description("Price"),
+                                fieldWithPath("quantityOnHand").type(Integer.class).description("Quantity On Hand")
                         )
                 ));
     }
@@ -90,7 +91,7 @@ class BeerControllerTest {
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(beerDtoJson))
                 .andExpect(status().isCreated())
-                .andDo(document("v1/beer",
+                .andDo(document("v1/beer-new",
                         requestFields(
                                 fields.withPath("id").ignored(),
                                 fields.withPath("version").ignored(),
